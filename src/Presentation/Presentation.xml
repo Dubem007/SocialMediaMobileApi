@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:Presentation.Controllers.AuthController.Login(Application.DataTransferObjects.LoginDto)">
+            <summary>
+            Logs in user with email and password
+            </summary>
+            <param name="user"></param>
+            <returns>Jwt Token</returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.ForgotPassword(System.String,System.String)">
+            <summary>
+            user forgets his/her password, sends a reset code
+            </summary>
+            <param name="id"></param>
+            <param name="email"></param>
+            <returns>string message</returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.ConfirmResetCode(System.String,System.String)">
+            <summary>
+            confirm the reset code sent to the member from the forgot password endpoint
+            </summary>
+            <param name="code"></param>
+            <param name="email"></param>
+            <returns>string messaage</returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.ResetPassword(Application.DataTransferObjects.ResetPasswordDto)">
+            <summary>
+            carries out the actual password reset
+            </summary>
+            <param name="model"></param>
+            <returns>string message</returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.UpdatePassword(Application.DataTransferObjects.UpdatePasswordDto)">
+            <summary>
+            Updates the user password
+            </summary>
+            <param name="model"></param>
+            <returns>string message</returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.RefreshToken(System.String,Application.DataTransferObjects.TokenDto)">
+            <summary>
+            Refresh access token
+            </summary>
+            <param name="userId"></param>
+            <param name="tokenDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.RegisterUser(Application.DataTransferObjects.RegisterUserDto)">
+            <summary>
+            Registers new user
+            </summary>
+            <param name="userForRegistrationDto"></param>
+            <returns>New User</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.SendVerificationCode(System.String)">
+            <summary>
+            Sends verification code to a new member
+            </summary>
+            <param name="email"></param>
+            <returns>String message</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.ConfirmInviteCode(System.String,System.String)">
+            <summary>
+            confirms the verification code sent the member
+            </summary>
+            <param name="code"></param>
+            <param name="email"></param>
+            <returns>string message</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.UpdateUser(System.String,Application.DataTransferObjects.UpdateUserDto)">
+            <summary>
+            Update a users profile
+            </summary>
+            <param name="userId"></param>
+            <param name="model"></param>
+            <returns>string message</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  redis:
+    container_name: redis
+    restart: unless-stopped
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - "6379:6379"
+  mipad-api:
+    image: ${DOCKER_REGISTRY-}mipad-api
+    container_name: mipad-api
+    build:
+      context: .
+      dockerfile: src/API/Dockerfile
+    ports:
+      - "13400:80"
+    env_file:
+      - ./.env
+    depends_on:
+      - redis
+    volumes:
+      - ~/.aspnet/https:/root/.aspnet/https:ro
+      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+  

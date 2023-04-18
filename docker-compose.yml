@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  mipad-api:
+    image: ${DOCKER_REGISTRY-}mipad-api
+    container_name: mipad-api
+    build:
+      context: .
+      dockerfile: src/API/Dockerfile
+  redis:
+    image: redis:alpine
