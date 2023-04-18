@@ -14,10 +14,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Push to server and deploy
-        uses: appleboy/ssh-action@master
+        
         with:
-          host: ${{ secrets.DEV_HOST }}
-          USERNAME: ${{ secrets.DEV_USERNAME }}
-          PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.DEV_SSHKEY }}
+          
           script: cd ${{ secrets.DEV_PATH }} && ls && git pull && docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build -d

@@ -88,20 +88,20 @@ namespace API.Configurations
         {
             var info = new OpenApiInfo
             {
-                Title = "MIPAD API",
+                Title = "SocialMediaMobile API",
                 Version = "v1",
-                Description = "MIPAD API Template",
-                TermsOfService = new Uri("https://prunedge.com/terms"),
+                Description = "SocialMediaMobile API Template",
+                TermsOfService = new Uri("https://Dubem.com/terms"),
                 Contact = new OpenApiContact
                 {
-                    Name = "Daniel Ale",
-                    Email = "developer@prunedge.com",
-                    Url = new Uri("https://prunedge.com/danielale")
+                    Name = "Dubem Oteke",
+                    Email = "dondubbie007@gmail.com",
+                    Url = new Uri("https://Dubem.com/dubwmo")
                 },
                 License = new OpenApiLicense
                 {
-                    Name = "Prunedge API LICX",
-                    Url = new Uri("https://prunedge.com/developer-licence")
+                    Name = "SocialMediaMobile API LICX",
+                    Url = new Uri("https://Dubem.com/developer-licence")
                 }
             };
 
