@@ -1,14 +1,14 @@
-Social Media App
+# Social Media App
 
 This is a social media app built with .NET 6.0 using SignalR, Hangfire, PostgreSQL, Docker, and Git.
 
-Overview
+# Overview
 
 The app allows users to create accounts and post updates, follow other users, and receive real-time updates on their activity feed. SignalR is used to enable real-time communication between users, while Hangfire is used to schedule background jobs for tasks such as sending emails and updating the user's feed.
 
 The app uses PostgreSQL as its database, with Entity Framework Core as the ORM. Docker is used to containerize the app and its dependencies for easy deployment, and Git is used for version control.
 
-Getting Started
+# Getting Started
 
 To get started with the app, follow these steps:
 
@@ -29,7 +29,7 @@ This app was built using the following technologies:
 - Docker
 - Git
 
-Folder Structure
+# Folder Structure
 
 The app's folder structure is as follows:
 
@@ -37,7 +37,7 @@ The app's folder structure is as follows:
 - /docker - contains the Docker configuration files
 - /scripts - contains scripts for managing the app
 
-Contributing
+# Contributing
 
 To contribute to the app, follow these steps:
 
