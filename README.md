@@ -17,13 +17,14 @@ Navigate to http://localhost:5000 in your web browser to view the app
 Technologies Used
 This app was built using the following technologies:
 
-.NET 6.0
-SignalR
-Hangfire
-PostgreSQL
-Entity Framework Core
-Docker
-Git
+- .NET 6.0
+- SignalR
+- Hangfire
+- PostgreSQL
+- Entity Framework Core
+- Docker
+- Git
+
 Folder Structure
 The app's folder structure is as follows:
 
